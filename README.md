@@ -1,4 +1,7 @@
-# Partie 4 : Exécution des Requêtes SQL
+# Conception d'une Base de Données pour un Site de Paris Sportifs de Football
+
+## Conception du Modèle de Données
+![diagramme](img/diagramme.svg)
 
 ## 1. Afficher les 5 derniers paris placés par un utilisateur
 
