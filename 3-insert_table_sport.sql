@@ -1,3 +1,4 @@
+-- Insertion des données dans la tables users
 INSERT INTO users (name, surname, email, password, solde) VALUES
 ('Alice', 'Dupont', 'alice@example.com', 'password1', 150.00),
 ('Bob', 'Martin', 'bob@example.com', 'password2', 300.00),
@@ -5,6 +6,7 @@ INSERT INTO users (name, surname, email, password, solde) VALUES
 ('Diane', 'Petit', 'diane@example.com', 'password4', 600.00),
 ('Eric', 'Lemoine', 'eric@example.com', 'password5', 750.00);
 
+-- Insertion des données dans la tables bets
 INSERT INTO bets (user_id, match_id, montant, cote, player_id, bet_status) VALUES
 (6, 16, 50, 2.0, 173, 'en attente'),
 (7, 16, 20, 3.5, 174, 'en attente'),
@@ -17,6 +19,7 @@ INSERT INTO bets (user_id, match_id, montant, cote, player_id, bet_status) VALUE
 (9, 20, 20, 2.6, 181, 'en attente'),
 (10, 20, 50, 2.0, 182, 'en attente');
 
+-- Insertion des données dans la tables teams
 INSERT INTO teams (name, logo, country, league) VALUES
 ('Paris Saint-Germain', 'psg_logo.png', 'France', 'Ligue 1'),
 ('Real Madrid', 'realmadrid_logo.png', 'Espagne', 'La Liga'),
@@ -29,6 +32,7 @@ INSERT INTO teams (name, logo, country, league) VALUES
 ('AC Milan', 'milan_logo.png', 'Italie', 'Serie A'),
 ('Manchester City', 'mancity_logo.png', 'Angleterre', 'Premier League');
 
+-- Insertion des données dans la tables players
 INSERT INTO players (name, surname, teams_id, nationality, poste, nb_buts) VALUES
 ('Léo', 'Messi', 11, 'Argentine', 'Attaquant', 5),
 ('Cristiano', 'Ronaldo', 12, 'Portugal', 'Attaquant', 7),
@@ -49,6 +53,7 @@ INSERT INTO players (name, surname, teams_id, nationality, poste, nb_buts) VALUE
 ('Kevin', 'De Bruyne', 17, 'Belgique', 'Milieu', 2),
 ('Harry', 'Kane', 28, 'Angleterre', 'Attaquant', 6);
 
+-- Insertion des données dans la tables matches
 INSERT INTO matches (id_team_1, id_team_2, location, match_date, match_status) VALUES
 (11, 12, 'Stade de France', '2024-12-01 18:00:00', 'prévu'),
 (13, 14, 'Camp Nou', '2024-12-02 20:00:00', 'prévu'),
@@ -56,6 +61,7 @@ INSERT INTO matches (id_team_1, id_team_2, location, match_date, match_status) V
 (17, 18, 'Old Trafford', '2024-12-04 21:00:00', 'prévu'),
 (19, 20, 'Anfield', '2024-12-05 18:00:00', 'prévu');
 
+-- Insertion des données dans la tables transactions
 INSERT INTO transactions (user_id, transaction_type, transaction_montant, transaction_date, bets_id) VALUES
 (6, 'dépôt', 100, '2024-11-01', 21),
 (7, 'retrait', 50, '2024-11-02', 22),
